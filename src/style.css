@@ -1,0 +1,57 @@
+.navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: antiquewhite;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: flex;
+    margin-right: 10px;
+}
+
+.navbar ul li:hover {
+    background-color: bisque;
+    border-radius: 20%;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color:black;
+
+}
+.navbar div {
+    display:flex;
+    margin-right: 20px;
+}
+.navbar div a {
+    text-decoration: none;
+    color:black;
+}
+.navbar div:hover{
+    background-color: bisque;
+    border-radius: 20%;
+}
+
+.container {
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+
+
+
+@media (max-width: 700px) {
+    .burger{
+        display: none;
+    }
+}
