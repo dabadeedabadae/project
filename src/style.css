@@ -62,8 +62,10 @@
     }
     .burger span{
         position: absolute;
-        width: - 30px; left: • 5px; height: • 3px;
-        background-color: black; bottom: • 20px;
+        width: 30px; 
+        left: 5px; 
+        height: 3px;
+        background-color: black; bottom: 20px;
     }
     .burger span:nth-child(1) {
         transform: translateY(-10px);
@@ -113,7 +115,7 @@
     .navbar.open .burger span:nth-child(2){
         opacity:0;
     }
-    .navbar.open .burger span:nth-child(1){
+    .navbar.open .burger span:nth-child(3){
         transform: translateY(0) rotate(-45deg);
     }
     
