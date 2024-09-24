@@ -51,6 +51,9 @@
     display: none;
 
 }
+.page1 {
+    background-image: url("./src/public/luffy.gif");
+}
 
 
 @media (max-width: 700px) {
