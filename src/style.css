@@ -1,10 +1,18 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
 .navbar {
     display: flex;
-    position: fixed;
-    width: 100%;
-    flex-direction: row;
     justify-content: space-between;
-    background-color: antiquewhite;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: rgba(51, 51, 51, 0.8);
+    transition: all 0.3s ease;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar ul {
@@ -54,6 +62,113 @@
 .page1 {
     background-image: url("./src/public/luffy.gif");
 }
+
+.navbar ul .work {
+    position:relative;
+    display: flex;
+    z-index: 10;
+}
+
+.navbar ul .work ul {
+    position: absolute;
+    flex-direction: column;
+    left: 0;
+    top:100%;
+    width: 100px;
+    display:none;
+    padding:0;
+    z-index: 20;
+}
+
+.navbar ul .work ul li {
+    z-index: 20;
+    background-color: aqua;
+    margin-bottom: 2px;
+}
+.navbar ul .work:hover ul{
+    display: block;
+}
+.navbar ul .work ul li:hover {
+    background-color: white;
+    border-radius: 0;
+}
+
+.navbar ul .work ul {
+    position: absolute; 
+    flex-direction: column; 
+    left: 10px; 
+    top: 0; 
+    width: 100px; 
+    display: none; 
+    padding: 0; 
+    z-index: 20; 
+}
+    
+    .navbar ul .work ul li {
+    margin-top: 0; 
+    margin-bottom: 10px; 
+    background-color: unset; 
+    font-size: 1.2rem; 
+    margin-left: 10px; 
+    color: black;
+}
+    
+    .navbar ul .work ul li:hover {
+    background-color: black; 
+}
+    
+    .navbar ul .work ul li:hover a:hover {
+    color: white; 
+}
+    
+    .navbar ul .work:hover ul li a {
+    color: black; 
+}
+
+.form {
+    flex-direction: column;
+}
+
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+    
+
+    
+.form form fieldset {
+    display:flex;
+    flex-direction: column; width: 50%; margin: auto; margin-top: 30px;
+    margin-bottom: 10px;
+
+}
+
+.form form fieldset input {
+    margin-bottom: 10px;
+}
+
+.form form fieldset legend {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.form form button {
+    width: 200px; font-size: 1.2rem;
+    background-color:#24779b; 
+    color: white; 
+    margin: auto;
+    margin-bottom: 20px;
+
+
+}
+.form form button:hover {
+    font-size: 1.2rem;
+    background-color:#91130C;
+    color: rgb (248, 243, 243);
+}
+
 
 
 @media (max-width: 700px) {
@@ -121,7 +236,11 @@
     .navbar.open .burger span:nth-child(3){
         transform: translateY(0) rotate(-45deg);
     }
+    .form form fieldset{
+        width:80%
+    }
     
     
 
 }
+

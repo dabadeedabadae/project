@@ -30,18 +30,45 @@
         </div>    
     </nav>
     <div><a>Entry</a></div>
-    <main>
-        <div class = "page1">
+    <main class="form">
+        <form>
+            <fieldset>
+                <legend>Personal information</legend>
+                <label for="name">Name</label>
+                <input id="name" name="new_name" placeholder="Name" type="text" required />
+                
+                <label for="surname">Surname</label>
+                <input id="surname" name="new_surname" placeholder="Surname" type="text" required />
+                
+                <label for="age">Age</label>
+                <input id="age" name="new_age" placeholder="18" type="number" required />
+                
+                <label for="adress">Address</label>
+                <input id="adress" name="new_adress" type="text" />
+                
+                <label for="phone">Phone number</label>
+                <input id="phone" name="new_phone" type="tel" />
+                
+                <label for="email">Email</label>
+                <input id="email" name="new_email" type="email" />
+            </fieldset>
             
-        </div>
-        <img src = "" width = 600 height = 600 alt = "logo">
-        <div>
-            <p>Interests: Danil Chaikin,Misha</p>
-            <p>Hobbies: books, GYM</p>
-            <p>Life views: INTJ</p>
-            <p>Credo: Attachment is the root of suffering</p>
-        </div>
+            <fieldset>
+                <legend>Educational information</legend>
+                <label for="faculty">Faculty</label>
+                <input id="faculty" name="new_faculty" type="text" />
+                
+                <label for="group">Group</label>
+                <input id="group" name="new_group" type="text" required />
+                
+                <label for="order">Date of enrollment order</label>
+                <input id="order" name="new_order" type="date" />
+            </fieldset>
+            
+            <button type="submit">Submit</button>
+        </form>
     </main>
+    
     <section>
         <h2>Essay</h2>
         <p>My name is Yelnur Ayagan and i am student.
