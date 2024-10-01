@@ -53,3 +53,43 @@ div.addEventListener("click", (event) => {
     calculus("/");
 });
 
+const sinButton = document.getElementById("butsin");
+const cosButton = document.getElementById("butcos");
+const tanButton = document.getElementById("buttan");
+
+const angleInput = document.getElementById("angle");
+const trigResult = document.getElementById("trigResult");
+
+function calculateTrig(func) {
+    const angle = parseFloat(angleInput.value) || 0;
+    const radians = angle * Math.PI / 180;
+    let result;
+
+    switch (func) {
+        case "sin":
+            result = Math.sin(radians);
+            break;
+        case "cos":
+            result = Math.cos(radians);
+            break;
+        case "tan":
+            result = Math.tan(radians);
+            break;
+    }
+    trigResult.textContent = result.toFixed(4);
+}
+
+sinButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    calculateTrig("sin");
+});
+
+cosButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    calculateTrig("cos");
+});
+
+tanButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    calculateTrig("tan");
+});
